@@ -16,8 +16,9 @@ body{
 }
 
 .btn{
-  padding: 8px 16px;
+  padding: 10px 16px;
   background-color: #0061FF;
+  display: inline-block;
 }
 
 /* utils */ 
@@ -94,29 +95,77 @@ header nav .btn a{
 
 .hero{
   background-color: #B4D0E7;
-  padding-top: 75px;
-  /* togliere*/
-  height: 735px;
+
+  /* da togliere */
+   height: 735px;
+}
+
+.hero>div{
+  width: 100%;
+}
+
+.hero>div .title{
+  height: 45%;
+  display:flex;
+  align-items: center;
 }
 
 .hero h1{
-  font-size: 4.9em;
+  font-size: 4.8em;
   font-weight: 900;
+  
+  padding: 20px 5px 0 5px;
+/*   padding-top: 80px;
+  padding-bottom: 50px; */
 }
 
 .hero-bottom{
   display: flex;
+  height: 55%;
   /* da togliere*/
-  height: 445px;
-}
+/*   height: calc(735px - 10%);
+ */}
 
 .hero-bottom .hero-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
   width: 30%;
+  padding: 5px;
+}
+
+.hero-bottom .hero-text *{
+/*   margin-bottom: 30px;
+ */}
+
+
+.hero-bottom .hero-text p{
+  font-size: 1em;
+}
+
+.hero-bottom .hero-text .btn a{
+  color: white;
+  text-decoration: none;
+}
+
+.hero-bottom .hero-text span{
+  margin-bottom: 40px;
+}
+
+
+.hero-bottom .hero-text i{
+  font-size: 3em;
 }
 
 .hero-bottom .hero-image{
   width: 70%;
 }
+
+.hero-bottom .hero-image img{
+  width: 100%;
+}
+
 
 /* MAIN */
 
@@ -149,7 +198,7 @@ main section.piano .top-section{
 main section.piano .row{
   display: flex;
   justify-content: space-between;
-  gap: 50px;
+/*   gap: 50px; */
   height: 950px;
   width: 100%;
 }
@@ -157,7 +206,8 @@ main section.piano .row{
 main section.piano .row .card{
   height: 100%;
 /*   width: 300px;
- */  width: calc(100% / 3);
+ */ /*  width: calc(100% / 3); */
+  width: 30%;
 }
 
 main section.piano>div .card.alone{
@@ -293,7 +343,7 @@ footer>div .footer-top{
 footer>div .footer-top nav{
   width: 20%;
   height: 100%;
-  padding: 100px 5px;
+  padding: 100px 20px 0 0;
 }
 
 footer>div .footer-top nav h3{
@@ -331,6 +381,7 @@ footer>div .footer-bottom .language{
   align-items: center;
   height: 100%;
   border-top: 1px solid white;
+  padding-right: 20px;
 }
 
 
