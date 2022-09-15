@@ -1,5 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* GENERAL */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+body{
+  font-family: 'Roboto', sans-serif;
+  padding-top: 80px;
+}
+
+.btn{
+  padding: 8px 16px;
+  background-color: #0061FF;
+}
+
+/* utils */ 
+
+.d-flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* HEADER */
+
+header{
+  background-color: white;
+  height: 80px;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+header nav .btn,
+header nav .logo{
+  display: inline;
+}
+
+header nav ul li a {
+  color: #131313;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+header nav ul li a:not(.btn a):hover {
+  text-decoration: underline;
+}
+
+header nav .btn a{
+  color: white;
+  font-weight: 400;
+}
+
+
