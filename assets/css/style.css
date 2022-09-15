@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 /* GENERAL */
 
 *{
@@ -9,7 +11,7 @@
 }
 
 body{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
   padding-top: 80px;
 }
 
@@ -19,6 +21,19 @@ body{
 }
 
 /* utils */ 
+
+.container{
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* togliere */
+  height: 100%;
+}
+
+.debug{
+  border: 1px solid firebrick;
+  background-color:bisque;
+}
 
 .d-flex{
   display: flex;
@@ -53,7 +68,7 @@ header nav .logo{
 header nav ul li a {
   color: #131313;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.05em;
   font-weight: 300;
 }
 
@@ -66,4 +81,30 @@ header nav .btn a{
   font-weight: 400;
 }
 
+/* Hero - Jumbotron */
 
+.hero{
+  background-color: #B4D0E7;
+  padding-top: 75px;
+  /* togliere*/
+  height: 735px;
+}
+
+.hero h1{
+  font-size: 4.9em;
+  font-weight: 900;
+}
+
+.hero-bottom{
+  display: flex;
+  /* da togliere*/
+  height: 445px;
+}
+
+.hero-bottom .hero-text{
+  width: 30%;
+}
+
+.hero-bottom .hero-image{
+  width: 70%;
+}
