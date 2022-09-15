@@ -191,9 +191,21 @@ main section.piano>div{
 }
 
 main section.piano .top-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   height: 130px;
   width: 100%;
 }
+
+main section.piano .top-section .radio-btns i:first-of-type{
+  color: #0061FF;
+}
+
+main section.piano .top-section .radio-btns label:first-of-type{
+  padding-right: 40px;
+}
+
 
 main section.piano .row{
   display: flex;
@@ -203,12 +215,95 @@ main section.piano .row{
   width: 100%;
 }
 
+/* card */
+
 main section.piano .row .card{
+  border: 1px solid #D6D6D9;
   height: 100%;
-/*   width: 300px;
- */ /*  width: calc(100% / 3); */
   width: 30%;
 }
+
+main section.piano .row .card .top-card{
+  border-bottom: 1px solid #D6D6D9;
+  text-align: center;
+  padding: 8px;
+}
+
+main section.piano .row .card .center-card{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 30px;
+  font-size: .9em;
+
+}
+
+main section.piano .row .card .center-card .title h3{
+  padding-bottom: 20px;
+}
+
+main section.piano .row .card .center-card .title .price{
+  font-weight: 800;
+}
+
+main section.piano .row .card .center-card .title span:first-of-type{
+  display: block;
+  padding-bottom: 15px;
+}
+
+main section.piano .row .card .center-card .title span:last-of-type{
+  color: grey;
+}
+
+
+main section.piano .row .card .center-card h3{
+  font-size: 1.5em;  
+}
+
+main section.piano .row .card .center-card ul{
+  list-style: none;
+}
+
+main section.piano .row .card .center-card ul li{
+  display: flex;
+  padding-bottom: 25px;
+}
+
+main section.piano .row .card .center-card ul li i{
+
+  margin-right: 5px;
+}
+
+main section.piano .row .card .center-card .try{
+}
+
+main section.piano .row .card .center-card ul li a{
+  color: black;
+  text-decoration: none;
+}
+
+main section.piano .row .card .center-card .try .btn a{
+  color: white;
+  text-decoration: none;
+}
+
+main section.piano .row .card .center-card .try .btn{
+  width: 100%;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+main section.piano .row .card .center-card .try>a{
+  color: #0061FF;
+}
+
+main section.piano .row .card .center-card .try span{
+  color: black;
+  border-bottom: 1px solid #D6D6D9;
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
 
 main section.piano>div .card.alone{
   height: 260px;
