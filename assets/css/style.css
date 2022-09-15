@@ -229,12 +229,13 @@ main section.piano .row .card .top-card{
   padding: 8px;
 }
 
-main section.piano .row .card .center-card{
+main section.piano .row .card .center-card,
+.card .bottom-card{
   display: flex;
   flex-direction: column;
   gap: 50px;
   padding: 30px;
-  font-size: .9em;
+  font-size: .85em;
 
 }
 
@@ -255,31 +256,34 @@ main section.piano .row .card .center-card .title span:last-of-type{
   color: grey;
 }
 
-
 main section.piano .row .card .center-card h3{
   font-size: 1.5em;  
 }
 
-main section.piano .row .card .center-card ul{
+main section.piano .row .card .center-card ul,
+.card .bottom-card ul{
   list-style: none;
 }
 
-main section.piano .row .card .center-card ul li{
+main section.piano .row .card .center-card ul li,
+.card .bottom-card ul li{
   display: flex;
   padding-bottom: 25px;
 }
 
-main section.piano .row .card .center-card ul li i{
-
+main section.piano .row .card .center-card ul li i,
+.card .bottom-card ul li i{
   margin-right: 5px;
 }
 
 main section.piano .row .card .center-card .try{
 }
 
-main section.piano .row .card .center-card ul li a{
+main section.piano .row .card .center-card ul li a,
+.card .bottom-card ul li a{
   color: black;
   text-decoration: none;
+  font-weight: 300;
 }
 
 main section.piano .row .card .center-card .try .btn a{
@@ -304,6 +308,13 @@ main section.piano .row .card .center-card .try span{
   display: inline-block;
 }
 
+.card .bottom-card h4{
+  margin-bottom: -20px;
+}
+
+.card .bottom-card ul li i{
+  color:#0061FF; 
+}
 
 main section.piano>div .card.alone{
   height: 260px;
