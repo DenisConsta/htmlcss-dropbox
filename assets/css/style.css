@@ -653,7 +653,28 @@ main .cta>div{
 main .cta>div .content{
   height: 100px;
   width: 100%;
+
+  display: flex;
+  align-items: flex-start;
+  justify-content:space-between
 }
+
+main .cta>div .content h2{
+  width: 50%;
+  color: #61082B;
+}
+
+main .cta>div .content .btn{
+  padding: 10px 40px;
+  background-color: white;
+}
+
+main .cta>div .content .btn a{
+  color: black;
+  font-weight: 300;
+  text-decoration: none;
+}
+
 
 /* FAQ */
 
