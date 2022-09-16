@@ -475,27 +475,63 @@ main section.utilizzi a{
 /* section.partnership*/
 
 main section.partnership{
-  display: flex;
-  height: 640px;
+  display: grid;
+  grid-template-columns: auto auto auto;
 }
 
-main section.partnership .companies-left,
-main section.partnership .companies-right{
-  display: flex;
-  flex-wrap: wrap;
-  width: 33%;
-  height: 100%;
-}
-main section.partnership .text-center{
-  width: 34%;
-  height: 100%;
+.partner-grid{
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-main section.partnership .square{
+.square{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: red;
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+
+.square img{
+  position: absolute;
   width: 50%;
-  height: 50%;
+  display: block;
+  filter: brightness(0) invert(1);
 }
 
+.square.green{
+  background-color: #A2D39B;
+}
+
+.square.brown{
+  background-color: #61082B;
+}
+
+.square.light-blue{
+  background-color: #0093CE;
+}
+
+.square.red{
+  background-color: #FF1C1C;
+}
+
+.square.scarlato{
+  background-color: #FF1C1C;
+}
+
+.square.featherbed{
+  background-color: #B4D0E7;
+}
+
+.square.blue{
+  background-color: #0D2481;
+}
+
+.square.yellow{
+  background-color: #FFD830;
+}
 /* cta */
 
 main .cta{
