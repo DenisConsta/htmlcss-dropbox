@@ -175,7 +175,7 @@ main h2{
 
 /* section.piano */
 
-main section{
+main section:not(.faq){
   margin-top: 150px;
 }
 
@@ -688,9 +688,25 @@ main section.faq>div{
   align-items: center;
 }
 
+main section.faq>div .content h2{
+  margin-bottom: 70px;
+}
+
 main section.faq>div .content{
   height: 420px;
   width: 100%;
+}
+
+main section.faq>div .content .questions{
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+main section.faq>div .content .question{
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 40px 40px 0;
+  border-top: 1px solid black;
 }
 
 /* FOOTER */
