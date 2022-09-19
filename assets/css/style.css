@@ -8,26 +8,22 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: 'Noto Sans', sans-serif;
   padding-top: 80px;
 }
 
+section{
+  padding-top: 150px;
+} 
+
 h2{
   font-size: 2.5em;
 }
-
-.btn{
-  padding: 10px 16px;
-  background-color: #0061FF;
-  display: inline-block;
-}
-
-section{
-  padding-top: 150px;
-}
-
-/* utils */ 
 
 .container{
   width: 80%;
@@ -40,6 +36,19 @@ section{
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.btn{
+  padding: 10px 16px;
+  background-color: #0061FF;
+  display: inline-block;
+}
+
+.btn:hover{
+  background-color: #0D89FE;
+  cursor: pointer;
+}
+
+/* utils */
 
 .debug{
   border: 1px solid firebrick;
@@ -75,7 +84,18 @@ header{
 header nav ul {
   list-style: none;
   display: flex;
+}
+
+header .left-menu ul{
   gap: 40px;
+}
+
+header .right-menu ul li:not(.right-menu li:nth-child(4)){
+  margin-left: 40px;
+}
+
+header .right-menu li:nth-child(3){
+  margin-right: 20px;
 }
 
 header nav .btn,
@@ -83,21 +103,22 @@ header nav .logo{
   display: inline;
 }
 
+header nav .logo{
+  padding-top: 10px;
+}
+
 header nav ul li a {
   color: #131313;
   text-decoration: none;
   font-size: 1.05em;
   font-weight: 300;
+  padding: 28px 0;
 }
 
-header .left-menu ul li a:hover{
-  padding-bottom: 31px;
-  border-bottom: 1px solid black; 
-}
-
-header .right-menu ul li a:not(.btn a):hover {
-  padding-bottom: 27px;
-  border-bottom: 1px solid black; 
+header nav ul li a:not(.btn a):hover {
+  padding-bottom: 28px;
+  border-bottom: 2px solid #0061FF; 
+  color: #0061FF;
 }
 
 header nav .btn a{
@@ -147,9 +168,17 @@ header nav .btn a{
   margin-bottom: 40px;
 }
 
+.hero-bottom .hero-text a{
+  color: black;
+}
+
 .hero-bottom .hero-text i{
   font-size: 3em;
   padding-bottom: 15px;
+}
+
+.hero-bottom .hero-text i:hover{
+  cursor:pointer;
 }
 
 /* HERO - .hero-image*/
@@ -206,6 +235,10 @@ section.piano .row .col{
 .card{
   border: 1px solid #D6D6D9;
   height: 100%;
+}
+
+.card a:hover:not(.btn a){
+  cursor:text;
 }
 
 .card .top-card{
@@ -540,9 +573,21 @@ section.partnership .grid-center{
   background-color: white;
 }
 
+.cta .content .btn:hover{
+  border: 1px solid black;
+}
+
 .cta .content .btn a{
   color: black;
   text-decoration: none;
+}
+
+.cta::before{
+  content: '';
+  display: block;
+  height: 80px;
+  margin: -80px 0 0;
+  background-color: white;
 }
 
 /* FAQ */
@@ -573,7 +618,7 @@ main section.faq{
 
 .faq .hide{
   display: none;
-  padding: 0 100px 60px 0;
+  padding: 0 0px 60px 0;
 }
 
 .upper{
